@@ -1,0 +1,76 @@
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.buscar {
+    font-size: 2.3em;
+    color: rgb(240, 240, 246);
+}
+
+#inputBuscar {
+    background: white;
+    border: 1px solid #393939;
+    width: 40%;
+    border-radius: 5px 5px 5px 5px;
+    color: rgb(0, 0, 0);
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+#btnBuscar {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.3em;
+    padding: 10px;
+    margin: 20px 0;
+    border: none;
+    color: rgb(240, 240, 246);
+    background: rgb(110, 106, 106);
+    border-radius: 8px 8px 8px 8px;
+}
+
+.lista_Peli {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 5%;
+}
+
+.listaPelis {
+    width: 20%;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #8eadf096;
+    margin-bottom: 30px;
+}
+
+.listaPelis img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+@media (max-width:600px) {
+
+    .lista_Peli,
+    .listaPelis {
+
+        display: block;
+        width: 100%;
+    }
+
+}
+
+.footerDisplay {
+    display: none;
+}
