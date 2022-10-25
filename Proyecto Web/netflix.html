@@ -43,12 +43,6 @@
     </nav>
 
     <section class="netflix">
-      <div class="boton">
-
-        <button class="boton" onclick="nocturno()">modo nocturno</button>
-        <button class="boton" onclick="dia()">modo dia</button>
-
-      </div>
       <h2><b>Aquellos Clásicos On-line!</b></h2>
 
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda neque ipsam aliquam dicta officia.
@@ -88,14 +82,7 @@
 
       <img src="https://images.daquan.tv/prod/2021/12/26/10/0f299a247c17b8d4b9934d4ba7fd9ff3/rastar-via-imdb-1.jpg"
         class="imgnet">
-
-
-
-
     </section>
-
-
-
 
     <footer>
       <div class="footer">
@@ -103,38 +90,6 @@
         <a href="#inicio"><img src="./estilos/media/flechaArriba.png" alt="flechaArriba"></a>
       </div>
     </footer>
-
-    <script>
-
-      function nocturno() {
-
-        var x;
-
-        x = document.querySelectorAll(".netflix, .netflix-aside");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.backgroundColor = "rgb(0,0,0)";
-          x[i].style.color = "rgb(255,255,255)";
-
-        }
-
-      }
-
-      function dia() {
-
-        var y;
-
-        y = document.querySelectorAll(".netflix, .netflix-aside");
-
-        for (a = 0; a < y.length; a++) {
-          y[a].style.backgroundColor = "rgb(255,255,255)";
-          y[a].style.color = "rgb(0,0,0)";
-
-        }
-
-      }
-
-    </script>
-
   </div>
 
   </main>
