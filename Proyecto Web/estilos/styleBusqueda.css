@@ -4,6 +4,7 @@
 }
 
 .buscar {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2.3em;
     color: rgb(240, 240, 246);
 }
@@ -60,17 +61,48 @@ footer {
     margin-top: 0;
 }
 
+.footerDisplay {
+    display: none;
+}
+
+.lista_Hide {
+    display: none;
+}
+
+.detalle_peli {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+.peli_img {
+    margin-right: 30px;
+}
+
+.info_peli {
+    color: rgb(255, 196, 199);
+    font-size: 1.1em;
+}
+
+.titulo_peli {
+    margin-top: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.6em;
+    color: rgb(255, 162, 101);
+}
+
+.info_peli p b {
+    color: rgb(211, 217, 253)
+}
+
+
 @media (max-width:600px) {
 
     .lista_Peli,
-    .listaPelis {
-
-        display: block;
+    .listaPelis,
+    .detalle_peli {
+        flex-direction: column;
         width: 100%;
     }
 
-}
-
-.footerDisplay {
-    display: none;
 }
