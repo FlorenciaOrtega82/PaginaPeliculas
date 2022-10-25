@@ -46,6 +46,7 @@
     border-radius: 10px;
     background-color: #8eadf096;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .listaPelis img {
