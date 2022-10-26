@@ -9,7 +9,7 @@
     padding: 20px;
     border-radius: 10px;
     font-size: 1.1em;
-    margin: 50px auto;
+    margin: auto;
     background-color: #ccc;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
     background-image: url("https://www.xtrafondos.com/descargar.php?id=3275&resolucion=2937x2056");
@@ -18,7 +18,7 @@
 .formulario__label {
     display: block;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: auto;
     padding: 10px;
     cursor: pointer;
 }
@@ -90,7 +90,7 @@ textarea {
 }
 
 .formulario__btn {
-    height: 45px;
+    height: auto;
     line-height: 45px;
     width: 30%;
     margin-top: 5%;
@@ -155,7 +155,7 @@ textarea {
     }
 
     .formulario__btn {
-        width: 100%;
+        width: 50%;
     }
 
 }
