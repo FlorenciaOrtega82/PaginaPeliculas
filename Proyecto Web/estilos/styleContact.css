@@ -93,7 +93,7 @@ textarea {
     height: 45px;
     line-height: 45px;
     width: 30%;
-    margin-top: 100px;
+    margin-top: 5%;
     background: black;
     color: white;
     font-weight: bold;
@@ -151,6 +151,7 @@ textarea {
     .formulario__mensaje,
     .formulario__grupo-btn-enviar {
         grid-column: 1;
+
     }
 
     .formulario__btn {
