@@ -61,11 +61,6 @@ textarea {
     opacity: 0;
 }
 
-.formulario__mensaje,
-.formulario__grupo-btn-enviar {
-    grid-column: span 2;
-}
-
 .formulario__mensaje {
     height: 45px;
     line-height: 45px;
