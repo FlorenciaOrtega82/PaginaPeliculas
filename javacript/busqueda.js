@@ -43,7 +43,7 @@ function loadDetallePelicula() {
     let listaPelis = document.querySelectorAll('.listaPelis');
     listaPelis.forEach(peli => {
         peli.addEventListener('click', async () => {
-            let detalle = await fetch(`http://www.omdbapi.com/?i=${peli.dataset.id}&apikey=b2daee92`)
+            let detalle = await fetch(`https://www.omdbapi.com/?i=${peli.dataset.id}&apikey=b2daee92`)
             let peliDetalle = await detalle.json();
             mostrarPeliDetalle(peliDetalle);
         })
