@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./estilos/styleContact.css">
+  <link rel="stylesheet" href="./estilos/style.css">
+  <link rel="shortcut icon" href="estilos/media/logoWeb2.0.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <title>Peli-Estreno | Contacto</title>
+</head>
+
+<body>
+
+  <header id="inicio">
+    <div class="logo">
+      <a href=""><img src="estilos/media/logoWeb2.0.ico" alt=""></a>
+      <h2 class="titulo"><a href="index.html">Peli-Estreno</a></h2>
+    </div>
+    <div class="social">
+      <a href="https://www.instagram.com"><img src="./estilos/media/logo-instagram.png" alt="Instagram"></a>
+      <a href="https://www.facebook.com"><img src="./estilos/media/logo-facebook.png" alt="Instagram"></a>
+      <a href="https://www.twitter.com"><img src="./estilos/media/logo-twitter.png" alt="Instagram"></a>
+    </div>
+  </header>
+
+  <nav class="navegacion">
+    <div>
+      <ul class="menu">
+        <li><a class="link" href="index.html">Home</a></li>
+        <li><a class="link" href="./netflix.html">Netflix</a></li>
+        <li><a class="link" href="trailers.html">Trailers</a></li>
+        <li><a class="link" href="busqueda.html">Búsqueda</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="animate__animated animate__headShake">"
+
+    <form class="formulario" id="formulario">
+      <!--Grupo: Nombre-->
+      <div class="formulario__grupo " id="grupo__nombre">
+        <label for="nombre" class="formulario__label">Nombre y apellido</label>
+        <div class="formulario__grupo-input">
+          <input type="text" placeholder="Pedro Valderrama" id="nombre" autocomplete="off" required name="nombre"
+            class="formulario__input">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error"></p>
+      </div>
+      <!--Grupo: correo-->
+      <div class="formulario__grupo" id="grupo__correo">
+        <label for="correo" class="formulario__label">Correo Electrónico</label>
+        <div class="formulario__grupo-input">
+          <input type="email" placeholder="pedrovalderrama2022@gmail.com" id="correo" autocomplete="off" required
+            name="correo" class="formulario__input">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">El correo solo puede contener letras, números, puntos, guiones y guion bajo
+        </p>
+      </div>
+
+      <!--Grupo: telefono-->
+      <div class="formulario__grupo" id="grupo__telefono">
+        <label for="telefono" class="formulario__label">Teléfono</label>
+        <div class="formulario__grupo-input">
+          <input type="text" placeholder=" XX XXXX XXXX" id="telefono" autocomplete="off" required name="telefono"
+            class="formulario__input">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">El telefono solo debe contener numeros y hasta 14 digitos </p>
+      </div>
+
+      <!--Grupo mensaje-->
+      <div class="formulario__grupo">
+        <label for="telefono" class="formulario__label">Mensaje</label>
+        <div class="formulario__grupo-input">
+          <textarea name="mensaje" id="mensaje" placeholder="Digite su mensaje aqui"></textarea>
+        </div>
+      </div>
+
+      <div class="formulario__mensaje" id="formulario__mensaje">
+        <p><i class="fas fa-exclamation-triangle"></i><b>Error: </b> Por favor rellene el formulario completamente</p>
+      </div>
+
+
+
+      <div class="formulario__grupo formulario__grupo-btn-enviar">
+        <button type="submit" class="formulario__btn">Enviar
+        </button>
+        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente</p>
+      </div>
+
+    </form>
+
+  </main>
+
+  <footer>
+    <div class="footer">
+      <p>&#169; Peli-Estreno. Derechos reservados</p>
+      <a href="#inicio"><img src="./estilos/media/flechaArriba.png" alt="flechaArriba"></a>
+    </div>
+  </footer>
+
+  <script src="./javacript/formulario.js"></script>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+  </main>
+
+</body>
+
+</html>
