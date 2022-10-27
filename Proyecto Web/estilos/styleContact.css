@@ -1,0 +1,156 @@
+/*--------------------------------------------------------*/
+/*    FORMULARIO   */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    margin: auto;
+    background-color: #ccc;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+    background-image: url("https://www.xtrafondos.com/descargar.php?id=3275&resolucion=2937x2056");
+}
+
+.formulario__label {
+    display: block;
+    font-weight: bold;
+    margin-top: auto;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.formulario__input,
+textarea {
+    width: 96.5%;
+    background-color: rgba(255, 255, 255, 0.562);
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    padding: 0 10px 0 10px;
+    transition: .3s ease all;
+    resize: none;
+}
+
+
+.formulario__input:focus {
+    border: 3px solid #0075ff;
+    outline: none;
+    box-shadow: 3px 0px 30px rgb(163 163 163, 0.4);
+}
+
+.formulario__input-error {
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.formulario__input-error-active {
+    display: block;
+}
+
+.formulario__validacion-estado {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.formulario__mensaje {
+    height: 45px;
+    line-height: 45px;
+    background: #F66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+
+.formulario__mensaje-activo {
+    display: block;
+}
+
+.formulario__mensaje p {
+    margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario__btn {
+    height: auto;
+    line-height: 45px;
+    width: 30%;
+    margin-top: 5%;
+    background: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+
+.formulario__btn:hover {
+    box-shadow: 3px 0px 30px rgba(163 163 163, 1);
+    background-color: rgb(23, 23, 23);
+}
+
+.formulario__mensaje-exito {
+    font-size: 14px;
+    color: #119200;
+    display: none;
+}
+
+.fomrulario__mensaje-exito-activo {
+    display: block;
+}
+
+/*Estilos para validacion*/
+.formulario__grupo-correcto .formulario__validacion-estado {
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+    color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+    color: #bb2929;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+    border: 3px solid #bb2929;
+
+}
+
+@media screen and (max-width: 800px) {
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+
+    .formulario__input,
+    textarea {
+        width: 98.5%;
+        padding: 0;
+    }
+
+    .formulario__mensaje,
+    .formulario__grupo-btn-enviar {
+        grid-column: 1;
+
+    }
+
+    .formulario__btn {
+        width: 100%;
+    }
+
+}
